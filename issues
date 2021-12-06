@@ -25,3 +25,7 @@ Test to ensure the version you installed is up-to-date:
 
 kubectl cluster-info
 kubectl version
+
+4) Install specific version of kubectl or client version:
+
+curl -LO https://storage.googleapis.com/kubernetes-release/release/<specific-kubectl-version>/bin/darwin/amd64/kubectl
