@@ -29,3 +29,6 @@ kubectl version
 4) Install specific version of kubectl or client version:
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/<specific-kubectl-version>/bin/darwin/amd64/kubectl
+
+To install 1.21 version:
+curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/darwin/amd64/kubectl
