@@ -1,4 +1,4 @@
-Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post
+1) Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post
 
 ```sh
 usermod -aG docker jenkins
@@ -8,7 +8,10 @@ chmod 664 /var/run/docker.sock
 chmod 777 /var/run/docker.sock
 ```
 
-Command 'kubectl' not found, but can be installed with:
+2) hudson.remoting.ProxyException: Can't construct a java object for in jenkins while deploying to kubernetes
+Try to downgrade the Kubernetes Continuous delivery plugin to 1.0.0 to fix the issue
+
+3)Command 'kubectl' not found, but can be installed with:
 Download the latest Kubernetes release with the command:
 
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
